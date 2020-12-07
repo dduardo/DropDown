@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D915D3E6257AA41F00CF53B5 /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D915D3E5257AA41F00CF53B5 /* DropDownView.xib */; };
+		D915D3E8257AA44D00CF53B5 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D915D3E7257AA44D00CF53B5 /* DropDownView.swift */; };
+		D915D3EE257ABA8200CF53B5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D915D3ED257ABA8200CF53B5 /* SecondViewController.swift */; };
 		D9B80FAF257A7E4A00EAA482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B80FAE257A7E4A00EAA482 /* AppDelegate.swift */; };
 		D9B80FB1257A7E4A00EAA482 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B80FB0257A7E4A00EAA482 /* SceneDelegate.swift */; };
 		D9B80FB3257A7E4A00EAA482 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B80FB2257A7E4A00EAA482 /* ViewController.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D915D3E5257AA41F00CF53B5 /* DropDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownView.xib; sourceTree = "<group>"; };
+		D915D3E7257AA44D00CF53B5 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		D915D3ED257ABA8200CF53B5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		D9B80FAB257A7E4A00EAA482 /* DropDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B80FAE257A7E4A00EAA482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9B80FB0257A7E4A00EAA482 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,9 +105,11 @@
 		D9B80FAD257A7E4A00EAA482 /* DropDown */ = {
 			isa = PBXGroup;
 			children = (
+				D9B80FDE257A809300EAA482 /* Compoonent */,
 				D9B80FAE257A7E4A00EAA482 /* AppDelegate.swift */,
 				D9B80FB0257A7E4A00EAA482 /* SceneDelegate.swift */,
 				D9B80FB2257A7E4A00EAA482 /* ViewController.swift */,
+				D915D3ED257ABA8200CF53B5 /* SecondViewController.swift */,
 				D9B80FB4257A7E4A00EAA482 /* Main.storyboard */,
 				D9B80FB7257A7E4D00EAA482 /* Assets.xcassets */,
 				D9B80FB9257A7E4D00EAA482 /* LaunchScreen.storyboard */,
@@ -126,6 +134,15 @@
 				D9B80FD2257A7E4E00EAA482 /* Info.plist */,
 			);
 			path = DropDownUITests;
+			sourceTree = "<group>";
+		};
+		D9B80FDE257A809300EAA482 /* Compoonent */ = {
+			isa = PBXGroup;
+			children = (
+				D915D3E5257AA41F00CF53B5 /* DropDownView.xib */,
+				D915D3E7257AA44D00CF53B5 /* DropDownView.swift */,
+			);
+			path = Compoonent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D915D3E6257AA41F00CF53B5 /* DropDownView.xib in Resources */,
 				D9B80FBB257A7E4D00EAA482 /* LaunchScreen.storyboard in Resources */,
 				D9B80FB8257A7E4D00EAA482 /* Assets.xcassets in Resources */,
 				D9B80FB6257A7E4A00EAA482 /* Main.storyboard in Resources */,
@@ -260,7 +278,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9B80FB3257A7E4A00EAA482 /* ViewController.swift in Sources */,
+				D915D3E8257AA44D00CF53B5 /* DropDownView.swift in Sources */,
 				D9B80FAF257A7E4A00EAA482 /* AppDelegate.swift in Sources */,
+				D915D3EE257ABA8200CF53B5 /* SecondViewController.swift in Sources */,
 				D9B80FB1257A7E4A00EAA482 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

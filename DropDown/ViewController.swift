@@ -10,11 +10,32 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var drop: DropDownView! {
+        didSet {
+            drop.delegate = self
+        }
     }
 
+//    @IBOutlet weak var testeView: TesteView!
+
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+//        testeView.mainLabel.text = "bkakdsad"
+    }
 
 }
 
+extension ViewController: DropDownViewProtocol {
+    func loadingDescription(completion: (String) -> Void) {
+        completion("passou")
+    }
+
+    func didTouched() {
+        let secondViewController = SecondViewController()
+        self.present(secondViewController, animated: true, completion: nil)
+    }
+
+}
