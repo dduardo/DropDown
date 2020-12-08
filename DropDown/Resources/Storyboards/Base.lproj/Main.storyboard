@@ -46,23 +46,7 @@
                     <view key="view" contentMode="scaleToFill" id="EF3-iC-FYt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7G-p7-dpb">
-                                <rect key="frame" x="16" y="250" width="382" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="GyZ-2o-Cdh"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="A7G-p7-dpb" firstAttribute="top" secondItem="qhD-Me-gBN" secondAttribute="top" constant="206" id="I1t-Xw-WOE"/>
-                            <constraint firstItem="qhD-Me-gBN" firstAttribute="trailing" secondItem="A7G-p7-dpb" secondAttribute="trailing" constant="16" id="a2f-UD-2tI"/>
-                            <constraint firstItem="A7G-p7-dpb" firstAttribute="leading" secondItem="qhD-Me-gBN" secondAttribute="leading" constant="16" id="p2w-4r-OWh"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qhD-Me-gBN"/>
                     </view>
                 </viewController>

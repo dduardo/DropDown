@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FilterTagCell" id="l6y-Aj-bg4" customClass="FilterTagCell" customModule="DropDown" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UIr-WC-fpx">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3c9-8J-sfX">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="400" id="aUx-lD-oKS"/>
+                            <constraint firstAttribute="height" constant="44" id="l5d-uo-6Ja"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2L-gD-xu1">
+                        <rect key="frame" x="0.0" y="8" width="366" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJF-2H-cSJ">
+                        <rect key="frame" x="366" y="8" width="34" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="xjR-jG-rjs"/>
+                        </constraints>
+                        <state key="normal" title="X"/>
+                        <connections>
+                            <action selector="removeTag:" destination="l6y-Aj-bg4" eventType="touchUpInside" id="pnV-JP-tfE"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="3c9-8J-sfX" secondAttribute="trailing" id="10P-Zu-XCj"/>
+                    <constraint firstAttribute="bottom" secondItem="3c9-8J-sfX" secondAttribute="bottom" id="5GJ-SH-BOs"/>
+                    <constraint firstAttribute="bottom" secondItem="q2L-gD-xu1" secondAttribute="bottom" constant="8" id="92O-hT-x9K"/>
+                    <constraint firstItem="q2L-gD-xu1" firstAttribute="top" secondItem="UIr-WC-fpx" secondAttribute="top" constant="8" id="ARI-qb-q5D"/>
+                    <constraint firstAttribute="bottom" secondItem="QJF-2H-cSJ" secondAttribute="bottom" constant="8" id="ChH-6d-e4h"/>
+                    <constraint firstItem="QJF-2H-cSJ" firstAttribute="leading" secondItem="q2L-gD-xu1" secondAttribute="trailing" id="OSG-mp-788"/>
+                    <constraint firstItem="3c9-8J-sfX" firstAttribute="leading" secondItem="UIr-WC-fpx" secondAttribute="leading" id="khx-y9-Prd"/>
+                    <constraint firstItem="QJF-2H-cSJ" firstAttribute="top" secondItem="UIr-WC-fpx" secondAttribute="top" constant="8" id="viZ-EW-ddD"/>
+                    <constraint firstItem="3c9-8J-sfX" firstAttribute="top" secondItem="UIr-WC-fpx" secondAttribute="top" id="wgc-Ki-c2x"/>
+                    <constraint firstAttribute="trailing" secondItem="QJF-2H-cSJ" secondAttribute="trailing" id="zih-l0-zTL"/>
+                    <constraint firstItem="q2L-gD-xu1" firstAttribute="leading" secondItem="UIr-WC-fpx" secondAttribute="leading" id="zt7-3C-NUm"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="243" height="44"/>
+            <connections>
+                <outlet property="removeTagButton" destination="QJF-2H-cSJ" id="E13-Oc-oBP"/>
+                <outlet property="tagDescriptionLabel" destination="q2L-gD-xu1" id="hXF-3W-LPm"/>
+                <outlet property="tagNameMaxWidthConstraint" destination="aUx-lD-oKS" id="kOg-b6-IJy"/>
+            </connections>
+            <point key="canvasLocation" x="277.536231884058" y="150.66964285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>
